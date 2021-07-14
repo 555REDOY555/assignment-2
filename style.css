@@ -4,8 +4,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 /* Header-styles */
+.header{
+    background-color: #2D25A0;
+}
+
 .home{
-     background-color: #2D25A0;
      padding-top: 40px;
       
 }
@@ -22,7 +25,7 @@ body{
     display: flex ;
     align-items: center;
     justify-content: space-around;
-    background-color: #2D25A0;
+    
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -141,3 +144,104 @@ footer img{
     background: #969BAB;
     margin-bottom: 20px;
 } 
+
+/* Media quries */
+@media screen and (max-width:767px) {
+    /* herder style */
+    .head{
+        display: none;
+    }
+    .frist-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-write{
+        font-size: 36px;
+        width: 278px;
+        height: 138px;
+    }
+    .header-pic img{
+        width: 329px;
+        height: 259.17px;
+        margin-top: 46px;
+    }
+    .writting{
+        margin: 0;
+    }
+    .ancore-header{
+        text-decoration: none;
+        width: 168px;
+        height: 44px;
+        color: #FFFFFF;
+        background-color: #E02C6D;
+        border-radius: 10px;
+    }
+    /* header style end */
+    /* top player style start */
+    .containar{
+        width: 300px;
+        margin-top: 85px;
+        margin-right: 0;
+    }
+    .top-playrs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 15px;
+        margin-right: 0;
+        width: 300px;
+
+    }
+    .players{
+        width: 300px;
+        margin-left: 60px;
+        
+    }
+    .player{
+        padding: 0;
+    }
+
+    /* top player end */
+ 
+    /* copa  style started */
+    .copa{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 0px;
+        margin-right: 0;
+    }
+    .copa-write{
+        font-size: 30px;
+        margin-bottom: 0;
+        width: 294px;
+        height: 80px;
+    }
+    .copa-pic img{
+        width: 328px;
+        height: 248px;
+        margin-right: 0;
+       
+    }
+    .copa-about{
+        width: 329px;
+        height: 143px;
+    }
+    /* copa end */
+
+
+
+    /* footer started */
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .footer-start img{
+        width: 190px;
+        height: 63px;
+        margin-top: 43px;
+    }
+
+
+
+}
